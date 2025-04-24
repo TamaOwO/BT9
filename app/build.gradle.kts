@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.bt9"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.bt9"
@@ -40,4 +40,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.gson)
+    implementation (libs.glide)
+    annotationProcessor (libs.compiler)
+    implementation(libs.circleimageview)
+    implementation (libs.okhttp)
 }
